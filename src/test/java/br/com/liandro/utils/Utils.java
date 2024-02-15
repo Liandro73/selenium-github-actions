@@ -18,15 +18,14 @@ public class Utils {
     public static void setUp() {
 
         ChromeOptions chromeOptions = new ChromeOptions();
-        chromeOptions.addArguments("--ignore-certificate-errors");
-        chromeOptions.addArguments("--disable-extensions");
+//        chromeOptions.addArguments("--ignore-certificate-errors");
+//        chromeOptions.addArguments("--disable-extensions");
         chromeOptions.addArguments("--headless");
-        chromeOptions.addArguments("--disable-gpu");
-        chromeOptions.addArguments("--disable-dev-shm-usage");
-        chromeOptions.addArguments("--no-sandbox");
-        chromeOptions.addArguments("--start-maximized");
-        System.setProperty("webdriver.chrome.driver", "/usr/local/bin");
-        driver = new ChromeDriver(chromeOptions);
+//        chromeOptions.addArguments("--disable-gpu");
+//        chromeOptions.addArguments("--disable-dev-shm-usage");
+//        chromeOptions.addArguments("--no-sandbox");
+//        chromeOptions.addArguments("--start-maximized");
+        WebDriver driver = new ChromeDriver(chromeOptions);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 
