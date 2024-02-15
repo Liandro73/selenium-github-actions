@@ -23,12 +23,12 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: artifact
-          path: /home/runner/work/robot-github-actions/target/*.jar
+          path: /home/runner/work/selenium-github-actions/target/*.jar
 
       - name: Upload Test Logs
         uses: actions/upload-artifact@v4
         with:
           name: logs
           path: |
-            /home/runner/work/robot-github-actions/target/evidence.html
-            /home/runner/work/robot-github-actions/target/evidence.json
+            /home/runner/work/selenium-github-actions/target/evidence.html
+            /home/runner/work/selenium-github-actions/target/evidence.json
