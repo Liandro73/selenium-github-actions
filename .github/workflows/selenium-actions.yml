@@ -17,13 +17,13 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
       - name: Run test
-        run: mvn test -Dcucumber.filter.tags="@login"
+        run: mvn install -Dcucumber.filter.tags="@login"
 
       - name: Upload Test Artifacts
         uses: actions/upload-artifact@v4
         with:
           name: artifact
-          path: /home/runner/work/selenium-github-actions/selenium-github-actions/target/selenium-github-actions-1.0.0.jar
+          path: /home/runner/work/selenium-github-actions/selenium-github-actions/target/selenium-github-actions-*.jar
 
       - name: Upload Test Logs
         uses: actions/upload-artifact@v4
