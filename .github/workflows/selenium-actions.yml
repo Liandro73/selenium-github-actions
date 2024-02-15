@@ -24,7 +24,8 @@ jobs:
         uses: nanasess/setup-chromedriver@v2.2.2
 
       - name: Run test
-        run: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.10-7/x64/bin/java -Dmaven.multiModuleProjectDirectory=/home/runner/work/selenium-github-actions -Djansi.passthrough=true -Dmaven.home=/usr/local/lib/apache-maven-3.8.1 -Dclassworlds.conf=/usr/local/lib/apache-maven-3.8.1/bin/m2.conf -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 test
+        run: mvn test -Dcucumber.filter.tags="@login"
+
 
       - name: Upload Test Artifacts
         uses: actions/upload-artifact@v4
