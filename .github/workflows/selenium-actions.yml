@@ -23,7 +23,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: artifact
-          path: /home/runner/work/selenium-github-actions/selenium-github-actions/target/selenium-github-actions-*.jar
+          path: /home/runner/work/selenium-github-actions/selenium-github-actions/target/selenium-github-actions-1.0.0.jar
 
       - name: Upload Test Logs
         uses: actions/upload-artifact@v4
