@@ -25,7 +25,7 @@ public class Utils {
         chromeOptions.addArguments("--disable-dev-shm-usage");
         chromeOptions.addArguments("--no-sandbox");
         chromeOptions.addArguments("--start-maximized");
-        System.setProperty("webdriver.chrome.driver", "/var/.chromedriver/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/usr/local/bin");
         driver = new ChromeDriver(chromeOptions);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         wait = new WebDriverWait(driver, Duration.ofSeconds(30));
