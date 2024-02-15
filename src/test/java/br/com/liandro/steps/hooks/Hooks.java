@@ -8,7 +8,6 @@ public class Hooks {
     @Before(order = 0)
     public void start() {
         Utils.setUp();
-
     }
 
     @After

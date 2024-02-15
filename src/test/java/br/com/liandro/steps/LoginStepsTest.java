@@ -1,6 +1,7 @@
 package br.com.liandro.steps;
 
 import br.com.liandro.utils.Utils;
+import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
